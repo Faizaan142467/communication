@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Status</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Eram Communication</h1>
+        <p class="shop-status <%= shopStatus ? 'open' : 'closed' %>">
+            The shop is currently <%= shopStatus ? 'Open' : 'Closed' %>.
+        </p>
+        <footer>Powered by Express and Socket.io</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('/project/public/images/0e235593-a5da-4699-9471-22318fa73e6c.jpeg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Container Styles */
+.container {
+    max-width: 900px;
+    width: 100%; /* Make container responsive */
+    padding: 30px;
+    background: #ffffff; /* Linear gradient background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text */
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px; /* Space below header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Status Styles */
+.shop-status {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.shop-status.open {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.shop-status.closed {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="hidden"] {
+    display: none;
+}

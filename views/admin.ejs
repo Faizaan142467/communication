@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel</h1>
+        <p class="shop-status <%= shopStatus ? 'open' : 'closed' %>">
+            The shop is currently <%= shopStatus ? 'Open' : 'Closed' %>.
+        </p>
+        <form action="/toggle-shop-status" method="post">
+            <input type="hidden" name="currentStatus" value="<%= shopStatus %>">
+            <button type="submit">
+                Toggle Shop Status
+            </button>
+        </form>
+        <footer>Powered by Express and Socket.io</footer>
+    </div>
+</body>
+</html>
